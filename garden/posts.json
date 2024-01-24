@@ -1,0 +1,9 @@
+{
+    "first": {
+        "title": "Hello World",
+        "type": "personal",
+        "excerpt": "My first post on my new website",
+        "plantedOn": "2024-01-23 12:00:00",
+        "updatedOn": "2024-01-24 12:00:00"
+    }
+}

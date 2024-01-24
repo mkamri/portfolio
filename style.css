@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Pixel Operator Mono'; 
+    src: url('/fonts/PixelOperatorMono.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Pixel Operator Mono Bold'; 
+    src: url('/fonts/PixelOperatorMono-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cthulhumbus Arcade'; 
+    src: url('/fonts/JMHCthulhumbusArcadeUG.ttf') format('truetype');
+}
+
+/**
+ * Colors inspired by my favorite Dracula Theme
+ */
+:root {
+    --spacing: .5rem;
+    --bg-color: #44475a;
+    --comment-color: #6272a4;
+    --text-color: #f8f8f2;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+html {
+    background-color: #282a36;
+}
+
+body {
+    font-family: 'Pixel Operator Mono', monospace;
+    max-width: 768px;
+    margin: 0 auto;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    color: var(--text-color);
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+.text-orange {
+    color: var(--orange);
+}
+.text-green {
+    color: var(--green);
+}
+.text-yellow {
+    color: var(--yellow);
+}
+.text-purple {
+    color: var(--purple);
+}
+.text-pink {
+    color: var(--pink);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+time {
+    font-family: 'Pixel Operator Mono Bold', monospace;
+    font-weight: 700;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1.25rem;
+}
+h3 {
+    font-size: 1.1rem;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a {
+    font-family: 'Pixel Operator Mono Bold', monospace;
+    color: var(--pink);
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+a:hover {
+    color: var(--red);
+}
+
+li {
+    line-height: 1.3rem;
+    vertical-align: middle;
+}
+
+ul > * + * {
+    margin-top: .75rem;
+}
+
+header #logo {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-family: 'Cthulhumbus Arcade';
+    margin-bottom: 0;
+}
+@media screen and (max-width: 768px)
+{
+    header {
+        padding: 0 1rem;
+    }
+}
+
+section,
+nav,
+article {
+    background-color: var(--bg-color);
+    padding: 1rem;
+    margin: var(--spacing) 0 0 0;
+}
+
+footer {
+    padding: .25rem;
+    margin-top: var(--spacing);
+    text-align: center;
+}
+
+.homepage--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing);
+}
+@media screen and (max-width: 768px)
+{
+    .homepage--grid {
+        display: block;
+    }
+}
