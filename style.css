@@ -90,7 +90,7 @@ p {
 
 ul {
     list-style: none;
-    margin-left: 0;
+    margin: 0;
     padding-left: 0;
 }
 
@@ -113,6 +113,47 @@ ul > * + * {
     margin-top: .75rem;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px)
+{
+    header {
+        display: block;
+    }
+    #branding {
+        margin-bottom: 1rem;
+    }
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+
+nav ul li {
+    margin: 0;
+    text-align: right;
+}
+nav ul li:not(:first-child)
+{
+    margin: 0 0 0 1rem;
+}
+
+nav ul li a {
+    color: var(--yellow);
+}
+nav ul li a:hover {
+    color: var(--orange);
+}
+
 header #logo {
     display: block;
     margin: 1rem 0;
@@ -128,7 +169,6 @@ header #logo {
 }
 
 section,
-nav,
 article {
     background-color: var(--bg-color);
     padding: 1rem;

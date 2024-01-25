@@ -28,19 +28,10 @@
                     <?= date('m/d/Y', strtotime($postData->plantedOn)) ?>
                 </li>
             <?php endif; ?>
-            <?php if(isset($postData->music) && !empty($postData->music)): ?>
-                <li>
-                    <strong>listening to:</strong> 
-                    <a href="<?= $postData->music->link ?>" target="_blank">
-                        <?= $postData->music->name ?>
-                    </a>
-                </li>
-            <?php endif; ?>
         </ul>
     </section>
     <article>
         <?= $Parsedown->text($content) ?>
     </article>
 </main>
-<?php include($_SERVER["DOCUMENT_ROOT"].'/nav.html'); ?>
 <?php include($_SERVER["DOCUMENT_ROOT"].'/footer.html'); ?>
