@@ -12,5 +12,13 @@
         </h2>
         <?php include('components/input-increment.php') ?>
     </section>
+    <section id="input-dropdown">
+        <h1>input dropdown</h1>
+        <p>Override the styling on all browsers to create a clean, modern dropdown element.</p>
+        <hr>
+        <h2>demo // <a href="https://codepen.io/mkamri/pen/wvZWZKP" target="_blank">View Codepen</a>
+        </h2>
+        <?php include('components/input-dropdown.php') ?>
+    </section>
 </main>
 <?php include($_SERVER["DOCUMENT_ROOT"].'/footer.html'); ?>
